@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="6" passed="2" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-29T18:07:15 EDT" name="Suite" finished-at="2023-09-29T18:08:09 EDT" duration-ms="54556">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidations.ValidateSubmitOrders()[pri:0, instance:RSEcommerceSelenium.tests.ErrorValidations@7203c7ff]" name="ValidateSubmitOrders" class="RSEcommerceSelenium.tests.ErrorValidations"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="submitOrderTest.submitOrders(java.util.HashMap)[pri:0, instance:RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]" name="submitOrders" class="RSEcommerceSelenium.tests.submitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2023-09-29T18:07:15 EDT" name="submit Order Test" finished-at="2023-09-29T18:08:08 EDT" duration-ms="53100">
+      <class name="RSEcommerceSelenium.tests.submitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]" started-at="2023-09-29T18:07:15 EDT" name="launchApplication" finished-at="2023-09-29T18:07:21 EDT" duration-ms="5425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrders(java.util.HashMap)[pri:0, instance:RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]" started-at="2023-09-29T18:07:21 EDT" name="submitOrders" data-provider="getData" finished-at="2023-09-29T18:07:27 EDT" duration-ms="6065" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Hello@123, email=samJose@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]" started-at="2023-09-29T18:07:27 EDT" name="tearDown" finished-at="2023-09-29T18:07:27 EDT" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]" started-at="2023-09-29T18:07:27 EDT" name="launchApplication" finished-at="2023-09-29T18:07:32 EDT" duration-ms="5714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrders(java.util.HashMap)[pri:0, instance:RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]" started-at="2023-09-29T18:07:32 EDT" name="submitOrders" data-provider="getData" finished-at="2023-09-29T18:08:08 EDT" duration-ms="35179" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Hello123, email=anishka@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at RSEcommerceSelenium.tests.submitOrderTest.submitOrders(submitOrderTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]" started-at="2023-09-29T18:08:08 EDT" name="tearDown" finished-at="2023-09-29T18:08:08 EDT" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]" started-at="2023-09-29T18:08:08 EDT" name="orderHistoryTest" finished-at="2023-09-29T18:08:08 EDT" depends-on-methods="RSEcommerceSelenium.tests.submitOrderTest.submitOrders" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method RSEcommerceSelenium.tests.submitOrderTest.orderHistoryTest() on instance RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6 depends on not successfully finished methods 
+[RSEcommerceSelenium.tests.submitOrderTest.submitOrders() on instance RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method RSEcommerceSelenium.tests.submitOrderTest.orderHistoryTest() on instance RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6 depends on not successfully finished methods 
+[RSEcommerceSelenium.tests.submitOrderTest.submitOrders() on instance RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+      </class> <!-- RSEcommerceSelenium.tests.submitOrderTest -->
+    </test> <!-- submit Order Test -->
+    <test started-at="2023-09-29T18:07:15 EDT" name="Error Validations Test" finished-at="2023-09-29T18:08:09 EDT" duration-ms="54556">
+      <class name="RSEcommerceSelenium.tests.ErrorValidations">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RSEcommerceSelenium.tests.ErrorValidations@7203c7ff]" started-at="2023-09-29T18:07:15 EDT" name="launchApplication" finished-at="2023-09-29T18:07:21 EDT" duration-ms="5679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="ValidateSubmitOrders()[pri:0, instance:RSEcommerceSelenium.tests.ErrorValidations@7203c7ff]" started-at="2023-09-29T18:07:21 EDT" name="ValidateSubmitOrders" finished-at="2023-09-29T18:07:21 EDT" duration-ms="734" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorreccct email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorreccct email or password.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at RSEcommerceSelenium.tests.ErrorValidations.ValidateSubmitOrders(ErrorValidations.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSubmitOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RSEcommerceSelenium.tests.ErrorValidations@7203c7ff]" started-at="2023-09-29T18:07:21 EDT" name="tearDown" finished-at="2023-09-29T18:07:21 EDT" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RSEcommerceSelenium.tests.ErrorValidations@7203c7ff]" started-at="2023-09-29T18:07:21 EDT" name="launchApplication" finished-at="2023-09-29T18:07:27 EDT" duration-ms="5599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ValidateSubmitOrders()[pri:0, instance:RSEcommerceSelenium.tests.ErrorValidations@7203c7ff]" started-at="2023-09-29T18:07:27 EDT" name="ValidateSubmitOrders" finished-at="2023-09-29T18:07:28 EDT" duration-ms="1151" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorreccct email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorreccct email or password.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at RSEcommerceSelenium.tests.ErrorValidations.ValidateSubmitOrders(ErrorValidations.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSubmitOrders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RSEcommerceSelenium.tests.ErrorValidations@7203c7ff]" started-at="2023-09-29T18:07:29 EDT" name="tearDown" finished-at="2023-09-29T18:07:29 EDT" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:RSEcommerceSelenium.tests.ErrorValidations@7203c7ff]" started-at="2023-09-29T18:07:29 EDT" name="launchApplication" finished-at="2023-09-29T18:07:34 EDT" duration-ms="5391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productValidations()[pri:0, instance:RSEcommerceSelenium.tests.ErrorValidations@7203c7ff]" started-at="2023-09-29T18:07:34 EDT" name="productValidations" finished-at="2023-09-29T18:08:09 EDT" duration-ms="34985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productValidations -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RSEcommerceSelenium.tests.ErrorValidations@7203c7ff]" started-at="2023-09-29T18:08:09 EDT" name="tearDown" finished-at="2023-09-29T18:08:09 EDT" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- RSEcommerceSelenium.tests.ErrorValidations -->
+    </test> <!-- Error Validations Test -->
+  </suite> <!-- Suite -->
+</testng-results>
