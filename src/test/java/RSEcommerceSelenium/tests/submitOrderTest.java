@@ -61,7 +61,7 @@ public class submitOrderTest extends BaseTest{
 	@Test(dependsOnMethods = {"submitOrders"})
 	public void orderHistoryTest() {
 		
-		ProductCatalogue productCataloguePage = landingPage.loginApplication("samJose@gmail.com", "Hello@123");
+		ProductCatalogue productCataloguePage = landingPage.loginApplication("dheejose@gmail.com", "Dheejose2@");
 				
 		OrderHistoryPage ordersPage = productCataloguePage.goToOrdersPage();
 		ordersPage.verifyOrderHistory(productName);

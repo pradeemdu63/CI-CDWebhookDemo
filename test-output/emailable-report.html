@@ -8,47 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">submit Order Test</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">53,100</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Error Validations Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">54,556</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num attn">1</th><th class="num attn">2</th><th class="num">107,656</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">41,909</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">submit Order Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">RSEcommerceSelenium.tests.submitOrderTest</td><td><a href="#m0">submitOrders</a></td><td rowspan="1">1696025252924</td><td rowspan="1">35179</td></tr><tr><th colspan="4">submit Order Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">RSEcommerceSelenium.tests.submitOrderTest</td><td><a href="#m1">orderHistoryTest</a></td><td rowspan="1">1696025288386</td><td rowspan="1">1</td></tr><tr><th colspan="4">submit Order Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">RSEcommerceSelenium.tests.submitOrderTest</td><td><a href="#m2">submitOrders</a></td><td rowspan="1">1696025241036</td><td rowspan="1">6065</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Error Validations Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">RSEcommerceSelenium.tests.ErrorValidations</td><td><a href="#m3">ValidateSubmitOrders</a></td><td rowspan="1">1696025247458</td><td rowspan="1">1151</td></tr><tr><th colspan="4">Error Validations Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">RSEcommerceSelenium.tests.ErrorValidations</td><td><a href="#m4">ValidateSubmitOrders</a></td><td rowspan="1">1696025241036</td><td rowspan="1">734</td></tr><tr><th colspan="4">Error Validations Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">RSEcommerceSelenium.tests.ErrorValidations</td><td><a href="#m5">productValidations</a></td><td rowspan="1">1696025254751</td><td rowspan="1">34985</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">RSEcommerceSelenium.tests.ErrorValidations</td><td><a href="#m0">productValidations</a></td><td rowspan="1">1709145640761</td><td rowspan="1">35636</td></tr></tbody>
 </table>
-<h2>submit Order Test</h2><h3 id="m0">RSEcommerceSelenium.tests.submitOrderTest#submitOrders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Hello123, email=anishka@gmail.com, productName=ADIDAS ORIGINAL}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at RSEcommerceSelenium.tests.submitOrderTest.submitOrders(submitOrderTest.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">RSEcommerceSelenium.tests.submitOrderTest#orderHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method RSEcommerceSelenium.tests.submitOrderTest.orderHistoryTest() on instance RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6 depends on not successfully finished methods 
-[RSEcommerceSelenium.tests.submitOrderTest.submitOrders() on instance RSEcommerceSelenium.tests.submitOrderTest@2f1de2d6]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">RSEcommerceSelenium.tests.submitOrderTest#submitOrders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Hello@123, email=samJose@gmail.com, productName=ZARA COAT 3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Error Validations Test</h2><h3 id="m3">RSEcommerceSelenium.tests.ErrorValidations#ValidateSubmitOrders</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorreccct email or password.]
-	at RSEcommerceSelenium.tests.ErrorValidations.ValidateSubmitOrders(ErrorValidations.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">RSEcommerceSelenium.tests.ErrorValidations#ValidateSubmitOrders</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorreccct email or password.]
-	at RSEcommerceSelenium.tests.ErrorValidations.ValidateSubmitOrders(ErrorValidations.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">RSEcommerceSelenium.tests.ErrorValidations#productValidations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">RSEcommerceSelenium.tests.ErrorValidations#productValidations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

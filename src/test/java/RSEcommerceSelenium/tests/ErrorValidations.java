@@ -45,6 +45,7 @@ public class ErrorValidations extends BaseTest{
 		
 		String productName = "ZARA COAT 3";
 		
+		//ProductCatalogue productCataloguePage = landingPage.loginApplication("anishka@gmail.com", "Hello123");
 		ProductCatalogue productCataloguePage = landingPage.loginApplication("anishka@gmail.com", "Hello123");
 		
 		List<WebElement>products = productCataloguePage.getProducts();

@@ -5,9 +5,9 @@
     <classes>
       <class name="RSEcommerceSelenium.tests.ErrorValidations">
         <methods>
-          <include name="submitOrders"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
+          <include name="ValidateSubmitOrders"/>
         </methods>
       </class> <!-- RSEcommerceSelenium.tests.ErrorValidations -->
     </classes>
